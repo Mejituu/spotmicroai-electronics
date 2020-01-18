@@ -29,4 +29,4 @@ For example franferri/SpotMicro with Raspberry Pi v1
 
 # Example file
 
-![Logo](https://gitlab.com/custom_robots/spotmicro/electronics/raw/master/franferri/SpotMicro%20with%20Raspberry%20Pi%20v1/SpotMicro%20with%20Raspberry%20Pi.jpg)
+![Logo](https://gitlab.com/custom_robots/spotmicro/electronics/raw/master/SpotMicro%20with%20RaspberryPi%20v1/SpotMicro%20with%20Raspberry%20Pi.jpg)
