@@ -19,3 +19,14 @@ This is the repository for Electronic schemas of SpotMicro project.
 In here you can find all the project repositories: **https://gitlab.com/custom_robots/spotmicro**
 
 # Electronics repository of SpotMicro project
+
+The folder arrangement follows the convention:
+
+* Gitlab username
+* Name that the user pics for the schematics
+
+For example franferri/SpotMicro with Raspberry Pi v1
+
+# Example file
+
+![Logo](https://gitlab.com/custom_robots/spotmicro/SpotMicro with Raspberry Pi.jpg)
