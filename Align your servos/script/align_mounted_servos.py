@@ -30,7 +30,7 @@ try:
     left_leg.ChangeDutyCycle(dc_left)
     dc_right = 2.5
     right_leg.ChangeDutyCycle(dc_right)
-    time.sleep(1)
+    time.sleep(3)
 
     mylcd.lcd_clear()
     mylcd.lcd_display_string("Left 180 degree", 1)
@@ -39,7 +39,7 @@ try:
     left_leg.ChangeDutyCycle(dc_left)
     dc_right = 2.5
     right_leg.ChangeDutyCycle(dc_right)
-    time.sleep(1)
+    time.sleep(3)
 
     mylcd.lcd_clear()
     mylcd.lcd_display_string("Left 180 degree", 1)
@@ -48,7 +48,7 @@ try:
     left_leg.ChangeDutyCycle(dc_left)
     dc_right = 2.5
     right_leg.ChangeDutyCycle(dc_right)
-    time.sleep(1)
+    time.sleep(3)
 
     mylcd.lcd_clear()
     mylcd.lcd_display_string("Left 0 degree", 1)
@@ -57,7 +57,7 @@ try:
     left_leg.ChangeDutyCycle(dc_left)
     dc_right = 12.5
     right_leg.ChangeDutyCycle(dc_right)
-    time.sleep(1)
+    time.sleep(3)
 
     mylcd.lcd_clear()
     mylcd.lcd_display_string("Left 0 degree", 1)
@@ -66,8 +66,7 @@ try:
     left_leg.ChangeDutyCycle(dc_left)
     dc_right = 12.5
     right_leg.ChangeDutyCycle(dc_right)
-    time.sleep(1)
-
+    time.sleep(3)
 
     mylcd.lcd_clear()
     mylcd.lcd_display_string("Left 0 degree", 1)
@@ -76,7 +75,36 @@ try:
     left_leg.ChangeDutyCycle(dc_left)
     dc_right = 12.5
     right_leg.ChangeDutyCycle(dc_right)
-    time.sleep(1)
+    time.sleep(3)
+
+
+    mylcd.lcd_clear()
+    mylcd.lcd_display_string("Left 90 degree", 1)
+    mylcd.lcd_display_string("Right 90 degree", 2)
+    dc_left = 7.5
+    left_leg.ChangeDutyCycle(dc_left)
+    dc_right = 7.5
+    right_leg.ChangeDutyCycle(dc_right)
+    time.sleep(3)
+
+    mylcd.lcd_clear()
+    mylcd.lcd_display_string("Left 90 degree", 1)
+    mylcd.lcd_display_string("Right 90 degree", 2)
+    dc_left = 7.5
+    left_leg.ChangeDutyCycle(dc_left)
+    dc_right = 7.5
+    right_leg.ChangeDutyCycle(dc_right)
+    time.sleep(3)
+
+
+    mylcd.lcd_clear()
+    mylcd.lcd_display_string("Left 90 degree", 1)
+    mylcd.lcd_display_string("Right 90 degree", 2)
+    dc_left = 7.5
+    left_leg.ChangeDutyCycle(dc_left)
+    dc_right = 7.5
+    right_leg.ChangeDutyCycle(dc_right)
+    time.sleep(3)
 
 finally:
     left_leg.stop()
