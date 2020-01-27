@@ -3,6 +3,32 @@ Also to test them before you mount, in case some are presenting excessive jitter
 
 To thest them use the script align_mounted_servos.py in this folder.
 
+Make sure you have the I2C interface connected in raspberry, in the Interfacing Options
+```
+sudo raspi-config
+```
+
+```
+ssh pi@192.168.1.XX
+
+cd "projects/electronics/Align your servos/script"
+
+curl -o RPi_LCD_16x2_I2C_driver.py https://gitlab.com/custom_robots/spotmicro/raspberrypi/raw/master/4.%20Test%20your%20components%20individually/LCD_16x2_I2C_Screen/RPi_LCD_16x2_I2C_driver.py
+
+sudo apt-get install python3-venv -y
+python3 -m venv venv --clear
+source venv/bin/activate
+
+curl https://bootstrap.pypa.io/get-pip.py | python
+
+pip install --upgrade pip
+pip install --upgrade setuptools
+python3 -m pip install smbus
+python3 -m pip install RPi.GPIO
+
+python3 align_mounted_servos.py
+```
+
 ![aligned-legs.jpg](aligned-legs.jpg)
 
 ![aligned-legs-2.jpg](aligned-legs-2.jpg)
