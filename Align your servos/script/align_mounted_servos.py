@@ -17,67 +17,69 @@ right_leg = GPIO.PWM(servo_pin_b, 50) # GPIO 27 for PWM with 50Hz
 
 mylcd = RPi_LCD_16x2_I2C_driver.lcd()
 
-dc_left = 2.5
-left_leg.start(dc_left)
-dc_right = 12.5
-right_leg.start(dc_right)
+try:
+    dc_left = 2.5
+    left_leg.start(dc_left)
+    dc_right = 12.5
+    right_leg.start(dc_right)
 
-mylcd.lcd_clear()
-mylcd.lcd_display_string("Left 180 degree", 1)
-mylcd.lcd_display_string("Right 0 degree", 2)
-dc_left = 12.5
-left_leg.ChangeDutyCycle(dc_left)
-dc_right = 2.5
-right_leg.ChangeDutyCycle(dc_right)
-time.sleep(1)
+    mylcd.lcd_clear()
+    mylcd.lcd_display_string("Left 180 degree", 1)
+    mylcd.lcd_display_string("Right 0 degree", 2)
+    dc_left = 12.5
+    left_leg.ChangeDutyCycle(dc_left)
+    dc_right = 2.5
+    right_leg.ChangeDutyCycle(dc_right)
+    time.sleep(1)
 
-mylcd.lcd_clear()
-mylcd.lcd_display_string("Left 180 degree", 1)
-mylcd.lcd_display_string("Right 0 degree", 2)
-dc_left = 12.5
-left_leg.ChangeDutyCycle(dc_left)
-dc_right = 2.5
-right_leg.ChangeDutyCycle(dc_right)
-time.sleep(1)
+    mylcd.lcd_clear()
+    mylcd.lcd_display_string("Left 180 degree", 1)
+    mylcd.lcd_display_string("Right 0 degree", 2)
+    dc_left = 12.5
+    left_leg.ChangeDutyCycle(dc_left)
+    dc_right = 2.5
+    right_leg.ChangeDutyCycle(dc_right)
+    time.sleep(1)
 
-mylcd.lcd_clear()
-mylcd.lcd_display_string("Left 180 degree", 1)
-mylcd.lcd_display_string("Right 0 degree", 2)
-dc_left = 12.5
-left_leg.ChangeDutyCycle(dc_left)
-dc_right = 2.5
-right_leg.ChangeDutyCycle(dc_right)
-time.sleep(1)
+    mylcd.lcd_clear()
+    mylcd.lcd_display_string("Left 180 degree", 1)
+    mylcd.lcd_display_string("Right 0 degree", 2)
+    dc_left = 12.5
+    left_leg.ChangeDutyCycle(dc_left)
+    dc_right = 2.5
+    right_leg.ChangeDutyCycle(dc_right)
+    time.sleep(1)
 
-mylcd.lcd_clear()
-mylcd.lcd_display_string("Left 0 degree", 1)
-mylcd.lcd_display_string("Right 180 degree", 2)
-dc_left = 2.5
-left_leg.ChangeDutyCycle(dc_left)
-dc_right = 12.5
-right_leg.ChangeDutyCycle(dc_right)
-time.sleep(1)
+    mylcd.lcd_clear()
+    mylcd.lcd_display_string("Left 0 degree", 1)
+    mylcd.lcd_display_string("Right 180 degree", 2)
+    dc_left = 2.5
+    left_leg.ChangeDutyCycle(dc_left)
+    dc_right = 12.5
+    right_leg.ChangeDutyCycle(dc_right)
+    time.sleep(1)
 
-mylcd.lcd_clear()
-mylcd.lcd_display_string("Left 0 degree", 1)
-mylcd.lcd_display_string("Right 180 degree", 2)
-dc_left = 2.5
-left_leg.ChangeDutyCycle(dc_left)
-dc_right = 12.5
-right_leg.ChangeDutyCycle(dc_right)
-time.sleep(1)
+    mylcd.lcd_clear()
+    mylcd.lcd_display_string("Left 0 degree", 1)
+    mylcd.lcd_display_string("Right 180 degree", 2)
+    dc_left = 2.5
+    left_leg.ChangeDutyCycle(dc_left)
+    dc_right = 12.5
+    right_leg.ChangeDutyCycle(dc_right)
+    time.sleep(1)
 
 
-mylcd.lcd_clear()
-mylcd.lcd_display_string("Left 0 degree", 1)
-mylcd.lcd_display_string("Right 180 degree", 2)
-dc_left = 2.5
-left_leg.ChangeDutyCycle(dc_left)
-dc_right = 12.5
-right_leg.ChangeDutyCycle(dc_right)
-time.sleep(1)
+    mylcd.lcd_clear()
+    mylcd.lcd_display_string("Left 0 degree", 1)
+    mylcd.lcd_display_string("Right 180 degree", 2)
+    dc_left = 2.5
+    left_leg.ChangeDutyCycle(dc_left)
+    dc_right = 12.5
+    right_leg.ChangeDutyCycle(dc_right)
+    time.sleep(1)
 
-left_leg.stop()
-right_leg.stop()
-GPIO.cleanup()
+finally:
+    left_leg.stop()
+    right_leg.stop()
+    GPIO.cleanup()
 

@@ -13,8 +13,6 @@ ssh pi@192.168.1.XX
 
 cd "projects/electronics/Align your servos/script"
 
-curl -o RPi_LCD_16x2_I2C_driver.py https://gitlab.com/custom_robots/spotmicro/raspberrypi/raw/master/4.%20Test%20your%20components%20individually/LCD_16x2_I2C_Screen/RPi_LCD_16x2_I2C_driver.py
-
 sudo apt-get install python3-venv -y
 python3 -m venv venv --clear
 source venv/bin/activate
