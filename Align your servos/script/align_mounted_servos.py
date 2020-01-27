@@ -1,4 +1,4 @@
-#!/home/pi/spotmicro/venv/bin/python3 -u
+#!/home/pi/projects/electronics/Align your servos/script/venv/bin/python3 -u
 
 import RPi_LCD_16x2_I2C_driver
 import RPi.GPIO as GPIO
