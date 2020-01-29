@@ -27,9 +27,16 @@ python3 -m pip install RPi.GPIO
 python3 align_mounted_servos.py
 ```
 
-![aligned-legs.jpg](aligned-legs.jpg)
+![aligned-legs](aligned-legs.jpg)
 
-![aligned-legs-2.jpg](aligned-legs-2.jpg)
+![aligned-legs-2](aligned-legs-2.jpg)
+
+![aligned-shoulders](aligned-shoulders.jpg)
+
+For me the trick was:
+* lower part of the leg: max 90º and 180º and adjust them as in the picture (different angles since right or left are the opposite)
+* Mind servos, 90º, then center the horns and mount
+* Shoulder servos 90º, then center the horns and mount
 
 Some videos to give you an idea of what I did:
 
