@@ -13,5 +13,8 @@ Mind than you are bypasing the capacitor this way. Is not ideal. But you can fee
 
 * If you go this path use a relay since you are bypasing the 0E conector
 
-![PCA9685_bypass_connection](https://gitlab.com/custom_robots/spotmicroai/.png)
+![PCA9685_bypass_connection](https://gitlab.com/custom_robots/spotmicroai/electronics/-/raw/master/User%20Fran%20Ferri/SpotMicro%20with%20RaspberryPi%20v2/PCA9685_board_problems.png)
 
+
+
+Sources of this ideas: https://forums.adafruit.com/viewtopic.php?f=8&t=163440&p=803328#p803328
